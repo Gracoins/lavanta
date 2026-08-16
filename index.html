@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lavanta Ağız ve Diş Sağlığı Polikliniği — Burdur</title>
+<meta name="description" content="Özel Lavanta Ağız ve Diş Sağlığı Polikliniği — Burdur. İmplantoloji, gülüş tasarımı, dişeti hastalıkları ve çocuk diş hekimliği. Randevu için WhatsApp'tan yazabilirsiniz.">
+<meta property="og:title" content="Lavanta Ağız ve Diş Sağlığı Polikliniği — Burdur">
+<meta property="og:description" content="İmplantoloji, gülüş tasarımı ve çocuk diş hekimliği — Burdur'un lavanta kokulu diş kliniği.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gracoins.github.io/lavanta/">
+<meta property="og:image" content="https://gracoins.github.io/lavanta/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#211a29; --ink2:#2b2233; --paper:#f6f2f6; --paper2:#ebe1ea;
+  --acc:#7d5fae; --acc-lt:#a48ed1; --sage:#7c8a68; --sage-lt:#a3b28e;
+  --muted:#7a7186; --line:#e1d5e0;
+  --d:'Fraunces',Georgia,serif; --b:'Plus Jakarta Sans',system-ui,sans-serif;
+  --ease:cubic-bezier(.32,.72,0,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--b);font-weight:400;
+  font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:var(--d);font-weight:500;letter-spacing:-.01em;line-height:1.12}
+em{font-style:italic;font-family:var(--d);font-weight:600;color:var(--acc)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.w{width:min(1180px,92vw);margin:0 auto}
+.rv{opacity:0;filter:blur(7px);transform:translateY(38px);transition:opacity .95s var(--ease),transform .95s var(--ease),filter .95s var(--ease)}
+.rv.in{opacity:1;filter:blur(0);transform:none}
+.rv2{transition-delay:.12s}.rv3{transition-delay:.24s}.rv4{transition-delay:.36s}
+
+.grain{position:fixed;inset:0;pointer-events:none;z-index:80;opacity:.035;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--acc);
+  display:flex;align-items:center;gap:14px;margin-bottom:20px;font-weight:600}
+.eyebrow::before,.eyebrow::after{content:"";width:26px;height:1px;background:var(--acc);opacity:.55}
+.center .eyebrow{justify-content:center}
+
+/* ── floating island nav ── */
+.navwrap{position:fixed;top:18px;left:0;right:0;z-index:90;display:flex;justify-content:center;pointer-events:none}
+.navpill{pointer-events:auto;display:flex;align-items:center;gap:30px;background:rgba(33,26,41,.64);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.09);
+  border-radius:100px;padding:9px 10px 9px 22px;box-shadow:0 14px 34px -14px rgba(0,0,0,.4);transition:.5s var(--ease)}
+.brandlock{display:flex;align-items:center;gap:10px}
+.bmark{width:34px;height:34px;border-radius:50%;background:linear-gradient(150deg,var(--acc-lt),#5a4380);
+  display:grid;place-items:center;flex:none}
+.bmark i{font-family:var(--d);font-style:italic;font-weight:600;color:#fff;font-size:1.05rem}
+.bname{display:flex;flex-direction:column;line-height:1.15}
+.bname b{font-family:var(--d);font-size:1.02rem;color:#fff;font-weight:500}
+.bname span{font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.navlinks{display:flex;gap:26px;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.navlinks a{color:rgba(255,255,255,.72);transition:.3s}
+.navlinks a:hover{color:var(--acc-lt)}
+.navcta{display:inline-flex;align-items:center;gap:10px;background:var(--acc);color:#fff;
+  padding:8px 8px 8px 20px;border-radius:100px;font-size:.76rem;font-weight:600;letter-spacing:.04em;transition:.45s var(--ease)}
+.navcta i{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.16);display:grid;place-items:center;transition:.45s var(--ease)}
+.navcta:hover{background:var(--acc-lt)}
+.navcta:hover i{transform:translate(2px,-1px) scale(1.06)}
+.burger{display:none;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);
+  align-items:center;justify-content:center;position:relative;cursor:pointer;flex:none}
+.burger span{position:absolute;width:15px;height:1.4px;background:#fff;transition:.4s var(--ease)}
+.burger span:first-child{transform:translateY(-3.5px)}
+.burger span:last-child{transform:translateY(3.5px)}
+body.menu-on .burger span:first-child{transform:rotate(45deg)}
+body.menu-on .burger span:last-child{transform:rotate(-45deg)}
+
+.mmenu{position:fixed;inset:0;z-index:85;background:rgba(24,18,30,.95);backdrop-filter:blur(30px);
+  -webkit-backdrop-filter:blur(30px);display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:8px;opacity:0;pointer-events:none;transition:opacity .5s var(--ease)}
+body.menu-on .mmenu{opacity:1;pointer-events:auto}
+.mmenu a{font-family:var(--d);font-size:1.7rem;color:#fff;padding:12px 0;opacity:0;
+  transform:translateY(48px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+body.menu-on .mmenu a{opacity:1;transform:none}
+body.menu-on .mmenu a:nth-child(1){transition-delay:.08s}
+body.menu-on .mmenu a:nth-child(2){transition-delay:.14s}
+body.menu-on .mmenu a:nth-child(3){transition-delay:.2s}
+body.menu-on .mmenu a:nth-child(4){transition-delay:.26s}
+body.menu-on .mmenu a:nth-child(5){transition-delay:.32s}
+.mmenu .navcta{margin-top:22px}
+
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 8px 16px 30px;border-radius:100px;
+  font-size:.83rem;letter-spacing:.05em;font-weight:600;transition:.45s var(--ease);cursor:pointer;
+  font-family:var(--b);border:1px solid transparent}
+.btn i{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;transition:.45s var(--ease);flex:none}
+.btn-g{background:var(--acc);color:#fff}
+.btn-g i{background:rgba(255,255,255,.18)}
+.btn-g:hover{background:var(--acc-lt);transform:translateY(-2px)}
+.btn-g:hover i{transform:translate(2px,-1px) scale(1.06)}
+.btn-o{border-color:rgba(255,255,255,.28);color:#fff;padding:16px 28px}
+.btn-o:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+.btn:active{transform:scale(.98)}
+
+.bez{background:rgba(125,95,174,.08);border:1px solid rgba(125,95,174,.18);border-radius:2rem;padding:.4rem}
+.bez-core{background:var(--paper);border-radius:1.65rem;box-shadow:inset 0 1px 1px rgba(255,255,255,.6);overflow:hidden}
+.bez-dark{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1)}
+.bez-dark .bez-core{background:var(--ink2);box-shadow:inset 0 1px 1px rgba(255,255,255,.06)}
+
+.hero{min-height:100dvh;position:relative;background:radial-gradient(ellipse 90% 60% at 20% 0%,#332844,var(--ink) 60%);
+  color:#fff;padding:150px 0 0;overflow:hidden;display:flex;align-items:center}
+.hero::before{content:"";position:absolute;inset:0;opacity:.55;
+  background:radial-gradient(ellipse at 78% 30%,rgba(125,95,174,.26),transparent 55%),
+             radial-gradient(ellipse at 10% 90%,rgba(124,138,104,.2),transparent 55%)}
+.hgrid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(30px,5vw,70px);align-items:center;padding-bottom:70px}
+.hero h1{font-size:clamp(2.4rem,4.4vw,3.5rem);margin-bottom:22px}
+.hlede{font-size:clamp(1rem,1.6vw,1.12rem);color:rgba(255,255,255,.68);max-width:480px;margin-bottom:36px;font-weight:300}
+.hbtns{display:flex;gap:14px;flex-wrap:wrap}
+.hphoto{aspect-ratio:4/5;position:relative}
+.hphoto img{width:100%;height:100%;object-fit:cover;border-radius:1.65rem}
+.chip{position:absolute;left:22px;bottom:22px;background:rgba(33,26,41,.74);backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.14);border-radius:1rem;padding:12px 18px;color:#fff}
+.chip span{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acc-lt);margin-bottom:3px}
+.chip b{font-family:var(--d);font-size:1.02rem;font-weight:500}
+
+.proof{position:relative;z-index:2;background:var(--ink);border-top:1px solid rgba(255,255,255,.1)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr)}
+.pitem{padding:26px 20px;text-align:center;border-left:1px solid rgba(255,255,255,.1)}
+.pitem:first-child{border-left:none}
+.pitem b{display:block;font-family:var(--d);font-size:1.9rem;color:var(--acc-lt);font-weight:500}
+.pitem span{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+
+section{padding:clamp(80px,10vw,140px) 0}
+.stitle{font-size:clamp(2rem,3.6vw,2.9rem);margin-bottom:20px}
+.slead{color:var(--muted);max-width:620px;font-size:1.04rem}
+.center{text-align:center}.center .slead{margin:0 auto}
+
+.about{background:var(--paper2)}
+.agrid{display:grid;grid-template-columns:.85fr 1fr;gap:clamp(34px,6vw,80px);align-items:center}
+.aphoto{aspect-ratio:1/1;position:relative}
+.aphoto img{width:100%;height:100%;object-fit:cover;border-radius:1.65rem}
+
+.svc{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:56px}
+.card{padding:32px 30px;transition:.5s var(--ease);height:100%}
+.svc .bez{transition:.5s var(--ease)}
+.svc .bez:hover{transform:translateY(-4px);border-color:rgba(125,95,174,.4)}
+.card .no{font-family:var(--d);font-style:italic;color:var(--acc);font-size:1.5rem;margin-bottom:14px;display:block}
+.card h3{font-size:1.22rem;margin-bottom:10px;font-weight:500}
+.card p{color:var(--muted);font-size:.92rem}
+.s1{grid-column:span 7}.s2{grid-column:span 5}.s3{grid-column:span 6}.s4{grid-column:span 6}
+
+.neden{background:var(--ink);color:#fff}
+.neden .eyebrow::before,.neden .eyebrow::after{background:var(--acc)}
+.neden .stitle{color:#fff}
+.ngrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.nitem{padding:34px 28px}
+.nitem .ic{width:46px;height:46px;border-radius:50%;background:rgba(125,95,174,.18);display:grid;place-items:center;margin-bottom:20px}
+.nitem svg{width:20px;height:20px;stroke:var(--acc-lt)}
+.nitem h3{font-size:1.1rem;margin-bottom:8px;color:#fff;font-weight:500}
+.nitem p{color:rgba(255,255,255,.55);font-size:.9rem}
+
+.randevu{background:var(--paper2)}
+.rgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(34px,6vw,72px);align-items:start}
+.rpoints{list-style:none;margin-top:30px}
+.rpoints li{display:flex;gap:16px;padding:19px 0;border-bottom:1px solid var(--line)}
+.rpoints b{font-family:var(--d);font-style:italic;font-size:1.5rem;color:var(--acc);line-height:1;flex:none;width:36px;font-weight:500}
+.rpoints strong{display:block;color:var(--ink);font-weight:600;margin-bottom:3px;font-size:1rem}
+.rpoints span{font-size:.93rem;color:var(--muted)}
+.form{padding:clamp(26px,4vw,38px)}
+.fld{margin-bottom:16px}
+.fld label{display:block;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;font-weight:600}
+.fld input,.fld select,.fld textarea{width:100%;background:var(--paper2);border:1px solid var(--line);
+  border-radius:14px;padding:14px 16px;font-family:var(--b);font-size:.96rem;color:var(--ink);
+  outline:none;transition:.3s var(--ease)}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--acc);background:#fff;box-shadow:0 0 0 3px rgba(125,95,174,.14)}
+.fld textarea{min-height:88px;resize:vertical}
+.form .btn{width:100%;justify-content:center;margin-top:8px;padding:16px 30px}
+.form .btn i{display:none}
+.rnote{font-size:.82rem;color:var(--muted);text-align:center;margin-top:14px}
+
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+.gitem{aspect-ratio:1;position:relative;cursor:pointer}
+.gitem .bez-core{width:100%;height:100%}
+.gitem img{width:100%;height:100%;object-fit:cover;transition:.9s var(--ease)}
+.gitem:hover img{transform:scale(1.06)}
+.gchip{position:absolute;left:14px;bottom:14px;background:rgba(33,26,41,.74);backdrop-filter:blur(8px);
+  border-radius:.7rem;padding:8px 12px;color:#fff;z-index:2}
+.gchip span{font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--acc-lt);display:block}
+.gchip b{font-family:var(--d);font-size:.86rem;font-weight:500}
+.lb{position:fixed;inset:0;background:rgba(15,11,18,.94);z-index:100;display:none;place-items:center;padding:26px}
+.lb.on{display:grid}
+.lb img{max-width:92vw;max-height:88vh;object-fit:contain;border-radius:1rem}
+.lbx{position:absolute;top:22px;right:28px;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1}
+
+footer{background:var(--ink);color:rgba(255,255,255,.68);padding:clamp(70px,7vw,100px) 0 36px}
+.fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:clamp(30px,5vw,64px)}
+.fbrand{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+footer h4{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--acc-lt);margin-bottom:18px;font-weight:600}
+footer a.flink{color:rgba(255,255,255,.68);transition:.3s;display:flex;align-items:center;min-height:40px;padding:6px 0}
+footer a.flink:hover{color:var(--acc-lt)}
+footer p{font-size:.92rem;margin-bottom:8px;color:rgba(255,255,255,.55)}
+.fbot{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem;color:rgba(255,255,255,.4)}
+
+.wafab{position:fixed;right:20px;bottom:20px;z-index:70;display:flex;align-items:center;gap:9px;
+  background:#25d366;color:#fff;padding:13px 20px 13px 13px;border-radius:100px;
+  box-shadow:0 10px 28px -6px rgba(37,211,102,.5);transition:.45s var(--ease);font-weight:600;font-size:.85rem}
+.wafab:hover{transform:translateY(-2px) scale(1.02)}
+.wafab svg{width:24px;height:24px;fill:#fff;flex:none}
+
+@media(max-width:900px){
+  .navlinks,.navcta{display:none}
+  .burger{display:flex}
+  .navpill{padding:8px}
+  .hgrid{grid-template-columns:1fr}
+  .hphoto{max-width:360px;margin:0 auto;order:-1}
+  .agrid,.rgrid{grid-template-columns:1fr}
+  .aphoto{max-width:380px;margin:0 auto}
+  .pgrid{grid-template-columns:1fr}
+  .pitem{border-left:none;border-top:1px solid rgba(255,255,255,.1)}
+  .pitem:first-child{border-top:none}
+  .s1,.s2,.s3,.s4{grid-column:span 12}
+  .ngrid{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr;gap:34px}
+}
+</style>
+</head>
+<body>
+
+<div class="grain"></div>
+
+<div class="navwrap"><div class="navpill">
+  <div class="brandlock"><span class="bmark"><i>l</i></span>
+    <div class="bname"><b>Lavanta</b><span>Ağız ve Diş Sağlığı</span></div></div>
+  <nav class="navlinks">
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#randevu">Randevu</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+  <a class="navcta" href="https://wa.me/905551956200" target="_blank">Randevu <i>↗</i></a>
+  <div class="burger" id="burger"><span></span><span></span></div>
+</div></div>
+
+<div class="mmenu" id="mmenu">
+  <a href="#hakkimizda">Hakkımızda</a>
+  <a href="#hizmetler">Hizmetler</a>
+  <a href="#randevu">Randevu</a>
+  <a href="#galeri">Galeri</a>
+  <a href="#iletisim">İletişim</a>
+  <a class="navcta" href="https://wa.me/905551956200" target="_blank">WhatsApp'tan yazın <i>↗</i></a>
+</div>
+
+<div class="hero">
+  <div class="w">
+    <div class="hgrid">
+      <div>
+        <div class="eyebrow">BURDUR MERKEZ</div>
+        <h1>Burdur'un <em>lavanta</em> kokulu gülüş kliniği</h1>
+        <p class="hlede">Özel Lavanta Ağız ve Diş Sağlığı Polikliniği — implantolojiden gülüş tasarımına, çocuk diş hekimliğinden dişeti tedavisine kadar tek adreste.</p>
+        <div class="hbtns">
+          <a class="btn btn-g" href="https://wa.me/905551956200" target="_blank">WhatsApp'tan randevu <i>↗</i></a>
+          <a class="btn btn-o" href="#hizmetler">Hizmetleri gör</a>
+        </div>
+      </div>
+      <div class="hphoto">
+        <img src="foto/gulus-onden.png" alt="Lavanta gülüş tasarımı sonucu">
+        <div class="chip"><span>Sonuç</span><b>Gülüş Tasarımı</b></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="proof"><div class="w pgrid">
+  <div class="pitem"><b>1.524</b><span>Instagram Takipçisi</span></div>
+  <div class="pitem"><b>70</b><span>Google Değerlendirmesi</span></div>
+  <div class="pitem"><b>139</b><span>Paylaşım</span></div>
+</div></div>
+
+<section class="about" id="hakkimizda"><div class="w agrid">
+  <div class="aphoto rv bez bez-dark"><div class="bez-core"><img src="foto/tabela.png" alt="Lavanta Ağız ve Diş Sağlığı Polikliniği kliniği"></div></div>
+  <div class="rv rv2">
+    <span class="eyebrow">Hakkımızda</span>
+    <h2 class="stitle">Burdur'da <em>güvenilir</em> bir isim</h2>
+    <p class="slead">Özel Lavanta Ağız ve Diş Sağlığı Polikliniği, Burdur Merkez Namık Kemal Caddesi'nde hizmet veren bir diş polikliniği. İmplantoloji ve estetik diş hekimliğinden gülüş tasarımına, dişeti hastalıklarından çocuk diş hekimliğine kadar geniş bir tedavi yelpazesiyle çalışıyoruz. Instagram'da 1.524 takipçimiz ve Google'da 70 değerlendirmemizle Burdur'un tanınan diş kliniklerinden biriyiz. Her tedavi öncesinde durumunuzu birlikte değerlendiriyor, size uygun planı açıkça anlatıyoruz.</p>
+  </div>
+</div></section>
+
+<section id="hizmetler"><div class="w">
+  <div class="center rv">
+    <span class="eyebrow">Hizmetlerimiz</span>
+    <h2 class="stitle">Sunduğumuz <em>tedaviler</em></h2>
+    <p class="slead">Burdur'daki polikliniğimizde uyguladığımız başlıca tedaviler.</p>
+  </div>
+  <div class="svc">
+    <div class="s1 bez rv"><div class="bez-core card"><span class="no">01</span><h3>İmplantoloji &amp; Estetik Diş Hekimliği</h3><p>Eksik dişlerin yerine implant uygulamaları ve estetik kaygıları önceleyen diş tedavileri.</p></div></div>
+    <div class="s2 bez rv rv2"><div class="bez-core card"><span class="no">02</span><h3>Gülüş Tasarımı</h3><p>Ölçüm ve simülasyonla, tedavi öncesinde gülüşünüzün nasıl görüneceğini birlikte planlıyoruz.</p></div></div>
+    <div class="s3 bez rv rv3"><div class="bez-core card"><span class="no">03</span><h3>Dişeti Hastalıkları</h3><p>Dişeti iltihabı ve çekilmesi gibi sorunların teşhisi ve tedavisi.</p></div></div>
+    <div class="s4 bez rv"><div class="bez-core card"><span class="no">04</span><h3>Çocuk Diş Hekimliği</h3><p>Çocuklara özel, onları korkutmayan bir yaklaşımla diş bakımı ve tedavisi.</p></div></div>
+  </div>
+</div></section>
+
+<section class="neden"><div class="w">
+  <div class="center rv">
+    <span class="eyebrow">Neden Lavanta</span>
+    <h2 class="stitle">Tedaviye başlamadan <em>önce</em></h2>
+  </div>
+  <div class="ngrid">
+    <div class="nitem rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 12l5 5L20 6"/></svg></div><h3>Aile odaklı yaklaşım</h3><p>Çocuk diş hekimliğinden yetişkin tedavilerine, tüm aileye tek adreste hizmet veriyoruz.</p></div>
+    <div class="nitem rv rv2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 12l5 5L20 6"/></svg></div><h3>Merkezi Burdur konumu</h3><p>Namık Kemal Caddesi üzerinde, ulaşımı kolay bir konumda hizmet veriyoruz.</p></div>
+    <div class="nitem rv rv3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 12l5 5L20 6"/></svg></div><h3>Hızlı geri dönüş</h3><p>WhatsApp'tan yazdığınızda mesajınıza aynı gün içinde yanıt veriyoruz.</p></div>
+  </div>
+</div></section>
+
+<section class="randevu" id="randevu"><div class="w rgrid">
+  <div class="rv">
+    <span class="eyebrow">Randevu</span>
+    <h2 class="stitle">Yerinizi <em>ayırtın</em></h2>
+    <p class="slead">Formu doldurun, WhatsApp'ta hazır mesaj olarak açılsın. Onaylayıp gönderin, size dönüş yapalım.</p>
+    <ul class="rpoints">
+      <li><b>01</b><span><strong>Hızlı dönüş</strong>Mesajınıza aynı gün içinde yanıt veriyoruz.</span></li>
+      <li><b>02</b><span><strong>Ön görüşme</strong>Tedavi öncesi ihtiyacınızı birlikte belirliyoruz.</span></li>
+      <li><b>03</b><span><strong>Net fiyat</strong>Fiyatı tedavi öncesinde konuşuyoruz, sürpriz yok.</span></li>
+    </ul>
+  </div>
+  <div class="bez rv rv2"><div class="bez-core form">
+    <div class="fld"><label>Ad Soyad</label><input id="f_ad" placeholder="Adınız ve soyadınız"></div>
+    <div class="fld"><label>Telefon</label><input id="f_tel" placeholder="05xx xxx xx xx"></div>
+    <div class="fld"><label>Tedavi</label><select id="f_hiz">
+      <option>İmplantoloji &amp; Estetik Diş Hekimliği</option><option>Gülüş Tasarımı</option>
+      <option>Dişeti Hastalıkları</option><option>Çocuk Diş Hekimliği</option>
+      <option>Diğer / emin değilim</option>
+    </select></div>
+    <div class="fld"><label>Tercih ettiğiniz gün / saat</label><input id="f_zaman" placeholder="Örn. Cuma öğleden sonra"></div>
+    <div class="fld"><label>Eklemek istedikleriniz</label><textarea id="f_not" placeholder="İsteğe bağlı"></textarea></div>
+    <a class="btn btn-g" id="f_gonder" href="#" target="_blank">WhatsApp'ta gönder <i>↗</i></a>
+    <p class="rnote">Form bilgileri kaydedilmez, doğrudan WhatsApp mesajına dönüşür.</p>
+  </div></div>
+</div></section>
+
+<section id="galeri"><div class="w">
+  <div class="center rv">
+    <span class="eyebrow">Galeri</span>
+    <h2 class="stitle">Çalışmalarımız</h2>
+    <p class="slead">Kliniğimizden ve tedavi sonuçlarımızdan kareler.</p>
+  </div>
+  <div class="gal">
+    <div class="gitem rv bez"><div class="bez-core"><img src="foto/tabela.png" alt="Lavanta kliniği dış cephesi"></div>
+      <div class="gchip"><span>Konum</span><b>Kliniğimiz</b></div></div>
+    <div class="gitem rv rv2 bez"><div class="bez-core"><img src="foto/logo-detay.png" alt="Lavanta tabelası"></div>
+      <div class="gchip"><span>Marka</span><b>Lavanta</b></div></div>
+    <div class="gitem rv rv3 bez"><div class="bez-core"><img src="foto/gulus-onden.png" alt="Gülüş tasarımı sonrası önden görünüm"></div>
+      <div class="gchip"><span>Sonuç</span><b>Gülüş Tasarımı</b></div></div>
+    <div class="gitem rv rv4 bez"><div class="bez-core"><img src="foto/gulus-yandan.png" alt="Gülüş tasarımı sonrası yandan görünüm"></div>
+      <div class="gchip"><span>Detay</span><b>Yandan Görünüm</b></div></div>
+  </div>
+</div></section>
+
+<footer id="iletisim"><div class="w">
+  <div class="fgrid">
+    <div>
+      <div class="fbrand"><span class="bmark"><i>l</i></span>
+        <div class="bname"><b style="color:#fff">Lavanta</b><span>Ağız ve Diş Sağlığı Polikliniği</span></div></div>
+      <p style="max-width:320px">Burdur'da implantoloji, gülüş tasarımı ve çocuk diş hekimliği — 1.524 Instagram takipçisi, 70 Google değerlendirmesi.</p>
+    </div>
+    <div>
+      <h4>İletişim</h4>
+      <a class="flink" href="https://wa.me/905551956200" target="_blank">0555 195 62 00</a>
+      <a class="flink" href="https://instagram.com/lavantadispoliklinigi" target="_blank">@lavantadispoliklinigi</a>
+      <a class="flink" href="https://www.google.com/maps/search/Bur%C3%A7+Mah.+Nam%C4%B1k+Kemal+Cd.+No:17%2FA,+15200+Burdur+Merkez%2FBurdur" target="_blank">Haritada aç</a>
+    </div>
+    <div>
+      <h4>Adres &amp; Saatler</h4>
+      <p>Burç Mah. Namık Kemal Cd. No:17/A, 15200 Burdur Merkez/Burdur</p>
+      <p>Pazartesi – Cuma · 09:00 – 18:00<br>Cumartesi 09:00 – 17:00 (Pazar kapalı)</p>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>© <span id="yil"></span> Lavanta Ağız ve Diş Sağlığı Polikliniği</span>
+    <span>MY BASKETO LTD tarafından hazırlandı</span>
+  </div>
+</div></footer>
+
+<a class="wafab" href="https://wa.me/905551956200" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.7.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3zM12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1112 20.2z"/></svg>
+  Randevu
+</a>
+
+<div class="lb" id="lb" onclick="this.classList.remove('on')"><span class="lbx">&times;</span><img id="lbi" src=""></div>
+
+<script>
+document.getElementById('yil').textContent=new Date().getFullYear();
+
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+
+const burger=document.getElementById('burger');
+burger.addEventListener('click',()=>document.body.classList.toggle('menu-on'));
+document.querySelectorAll('#mmenu a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('menu-on')));
+
+document.querySelectorAll('.gitem img').forEach(g=>g.closest('.gitem').addEventListener('click',()=>{
+  document.getElementById('lbi').src=g.src;document.getElementById('lb').classList.add('on')}));
+
+const F=document.getElementById('f_gonder');
+function wa(){
+  const v=id=>(document.getElementById(id).value||'').trim();
+  let m='Merhaba, Lavanta Ağız ve Diş Sağlığı Polikliniği için randevu almak istiyorum.';
+  if(v('f_ad'))m+=`\n\nAd Soyad: ${v('f_ad')}`;
+  if(v('f_tel'))m+=`\nTelefon: ${v('f_tel')}`;
+  m+=`\nTedavi: ${v('f_hiz')}`;
+  if(v('f_zaman'))m+=`\nTercih: ${v('f_zaman')}`;
+  if(v('f_not'))m+=`\nNot: ${v('f_not')}`;
+  F.href=`https://wa.me/905551956200?text=${encodeURIComponent(m)}`;
+}
+['f_ad','f_tel','f_hiz','f_zaman','f_not'].forEach(id=>document.getElementById(id).addEventListener('input',wa));
+wa();
+</script>
+</body>
+</html>
